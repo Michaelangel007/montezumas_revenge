@@ -1,0 +1,42 @@
+<html>
+    <style>
+        tr.spacer {
+            padding-bottom: 2em; 
+        }
+    </style>
+    <head>
+        <script src="canvas.js"></script>
+        <script src="handwriting.js"  ></script>
+    </head>
+    <body onload='main();' style='margin:0;'>
+    <table cellpadding='0' style='margin:0; border-spacing:0;'>
+        <tr>
+            <td valign='top'>
+                <canvas id='canvas' width=1024 height=768 style='margin:0; left:0; top:0'>
+                    HTML5 Canvas not supported!
+                </canvas>
+            </td>
+        </tr>
+        <tr>
+            <td><div style="height:1px"></div></td>
+        </tr>
+        <tr>
+            <td>
+                <button id="buttonBug" onclick="onBug(); ">Original "R" bug</button>
+                <button id="buttonFix" onclick="onFix(); ">Fixed "R"       </button>
+            </td>
+        </tr>
+        <tr>
+            <td><div style="height:1px"></div></td>
+        </tr>
+        <tr>
+            <td>
+                <button id="buttonBnW" onClick="onBnW()">Monochrome      </button>
+                <button id="buttonRGB" onclick="onRGB()">Debug Colors    </button>
+            </td>
+        </tr>
+    </table>
+    </body>
+</html>
+
+
